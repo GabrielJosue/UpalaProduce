@@ -20,7 +20,18 @@
   src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
 }
 
+/*CSS para formulario de contacto	*/
+.header {
+	color: #36A0FF;
+	font-size: 35px;
+	padding: 10px;
+}
 
+.bigicon {
+	font-size: 35px;
+	color: #36A0FF;
+}
+/*Fin de CSS para formulario de contacto	*/
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
