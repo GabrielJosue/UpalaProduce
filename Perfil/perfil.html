@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Upala Produce</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <!--icono-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Js/dropzone.js" type="text/javascript"></script>
+    <script src="JS/contrasena.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
+            <img src="../IMG/Logo.png" alt="Trueques Upala" style="width:150px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trueques</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mensajeria.html">Mensajeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+
+                    <!---->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-fw fa-user"></i> </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Cuenta</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                            <div class="dropdown-divider"></div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container h-100" >
+
+        <div class="row justify-content-center h-100">
+
+            <!--Encabezado de cuadro-->
+            <section class="row">
+                <header class="pb-2 pt-4 text-center alert alert-info col-sm-4 col-md-12">
+                    <h2> Andres Alfaro Cortes </h2>
+
+                    <span data-toggle=tooltip data-html=true class="float-left ml-3"
+                          title='<h4>Haz clic aquí</h4> <p>Edita o agrega información personal</p>'
+                          data-placement='top'>
+                        <a data-target="#Editar" class="text-info" data-toggle='modal'
+                           style="cursor: pointer;"> Editar Datos</a>
+                    </span>
+
+                    <span class="float-right mr-3" data-toggle=tooltip data-html=true
+                          title='<h4>Haz clic aquí</h4> <p>Modifique o actualice su contraseña</p>'
+                          data-placement='top'>
+                        <a data-target="#clave" class="text-info" data-toggle='modal'
+                           style="cursor: pointer;">Cambiar contraseña</a>
+                    </span>
+
+                </header>
+
+                <!-- Modal editar -->
+                <section id="Editar" class="modal fade" data-backdrop="static" data-keboard="false" tabindex="-1" aria-hidden="true">
+                    <section class="modal-dialog modal-lg">
+                        <article class="modal-content">
+                            <header class="modal-header alert alert-info sticky-top">
+                                <h2 class="modal-title m-3 text-center">Ingrese la información</h2>
+                                <button class="close" data-dismiss="modal" title="Cerrar">&times;</button>
+                            </header>
+                            <section class="modal-body mx-5 card">
+                                <form action="#" method="get" accept-charset="utf-8">
+                                    <input type="text" class="form-control mt-3" placeholder="Nombre" name="txtNombre" id="txtNombre" value="Andres" required>
+                                    <small class="mb-3 text-danger">*<i class="text-dark">Campo requerido</i>*</small>
+                                    <input type="text" class="form-control mt-3" placeholder="Primer Apellido" name="txtAp1" id="txtAp1" value="Alfaro" required>
+                                    <small class="mb-3 text-danger">*<i class="text-dark">Campo requerido</i>*</small>
+                                    <input type="text" class="form-control mt-3" placeholder="Segundo Apellido" name="txtAp2" id="txtAp2" value="Cortes" required>
+                                    <small class="mb-3 text-danger">*<i class="text-dark">Campo requerido</i>*</small>
+                                    <input type="email" class="form-control mt-3" placeholder="Correo" name="txtCorreo" id="txtCorreo" value="andresalfaro@gmail.com" required>
+                                    <small class="mb-3 text-danger">*<i class="text-dark">Campo requerido</i>*</small>
+                                    <input type="tel" class="form-control mt-3" placeholder="Teléfono">
+
+                                    <label for="Distrito" class="mt-3"> Distrito: </label>
+                                    <select id="Distrito" class="form-control">
+                                        <option> Upala</option>
+                                        <option> Canalete </option>
+                                        <option> Yolillal </option>
+                                        <option> México de Upala </option>
+                                        <option> San José de Upala </option>
+                                        <option> Dos Ríos </option>
+                                        <option> Aguas Claras </option>
+                                        <option> Bijagua </option>
+                                    </select>
+                                    <label for="direccion" class="mt-3" id="direccion"> Dirección </label>
+                                    <textarea class="form-control" rows="3">  </textarea>
+                                    <small for="direccion" class="form-text text-muted float-right">Describa la dirección de su domicilio</small>
+                                </form>
+                            </section>
+                            <footer class="modal-footer mx-5">
+                                <button id="boton1" style="background-color:red" type="button" data-dismiss="modal" class="btn btn-secondary btn-responsive">
+                                    <span class="glyphicon glyphicon-remove" data-toggle=tooltip data-html=true class="float-left ml-3"
+                                          title='<p>Cerrar edición</p>'
+                                          data-placement='top'></span>
+                                </button>
+                                <button type="submit" class="btn btn-success ml-4 btn-responsive">
+                                    <span class="glyphicon glyphicon-ok" data-toggle=tooltip data-html=true class="float-left ml-3"
+                                          title='<p>Guardar edición</p>'
+                                          data-placement='top'></span>
+                                </button>
+                            </footer>
+                        </article>
+                    </section>
+                </section>
+                <!-- Modal editar -->
+
+
+
+                <section class="col-sm-6">
+                    <article class="text-center p-5">
+                        <small class="text-muted d-block m-2">Foto actual</small>
+                        <img width="240px" src="../Imagenes/Foto.png" class="img border border-info rounded-circle p-3 img-fluid" alt="Foto">
+                    </article>
+                </section>
+
+                <section class="col-sm-6 p-3">
+                    <article>
+                        <h2 class="text-center"> Información </h2>
+                        <p>
+                            • Nombre:         <b> Andres </b> <br />
+                            • Apellidos: <b> Alfaro Cortes </b> <br />
+                            • Distrito:       <b> Upala </b> <br />
+                            • Direccion:       <b> 100m al norte del Banco Nacional Upala </b> <br />
+                            • E-mail:          <b>andresalfaro@gmail.com</b> <br />
+                            • Telefono:        <b>87459621</b>    <br />
+                        </p>
+                    </article>
+                </section>
+            </section>
+
+            <!--Cuadro para cambiar imagen-->
+            <section class="row px-5 mx-5 mb-5">
+                <article class="col-sm-8 col-md-12">
+                    <button type="button" class="btn text-white bg-info col align-self-center">Cambiar &#128247</button>
+                    <script type="text/javascript">
+                        Dropzone.options.dropzone = {
+                            maxFilesize: 2,
+                            acceptedFiles: ".png, .jpg, .jpge",
+                        }
+                        var drop = new Dropzone("#ImagenPerfil", { url: 'Codigo.php' });
+                        $("[data-toggle='tooltip']").tooltip();
+                    </script>
+                </article>
+            </section>
+            <!--Fin de Cuadro para cambiar imagen-->
+
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 navbar-light bg-light ">
+        <div class="container">
+            <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
+            <p class="m-0 text-center ">Desarrollado por A&G Informática</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!--Modal para contrasena-->
+    <section class="modal fade" id="clave" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keboard="false">
+        <section class="modal-dialog" role="form">
+            <section class="modal-content">
+                <header class="modal-header alert alert-info">
+                    <h2 class="text-center"> Cambio de Contraseña </h2>
+                    <button onclick="defecto()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span data-tooggle="tooltip" data-placement="left" title="Cerrar" aria-hidden="true" class="con close">X</span>
+                    </button>
+                </header>
+                <section class="modal-body ">
+                    <section class="container" id="advanced-search-form">
+                        <!--Form-->
+                        <form id="formulario" action="" onsubmit="return verifica()" onclick="valida()" method="get">
+
+                            <section class="col-lg-5">
+                                <section class="p-5">
+
+                                    <section class="container">
+                                        <section class="row">
+                                            <section class="col-xs-12 col-md-4">
+                                                <section class="form-group">
+                                                    <label class="etiqueta" for="oldpass">Contraseña Actual</label>
+                                                    <section class="input-group">
+                                                        <input height="50" type="password" oninvalid="setCustimValidity('La contrseña es invalida')" class="form-control" placeholder="Contraseña Actual" id="pass_1"
+                                                               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
+                                                        <span id="S_1" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(1)"><img id="img_1" src="../Imagenes/v1.png" width="20" height="20"></span>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+
+                                    <section class="container">
+                                        <section class="row">
+                                            <section class="col-xs-12 col-md-4">
+                                                <section class="form-group">
+                                                    <label class="etiqueta" for="oldpass">Nueva Contraseña</label>
+                                                    <section class="input-group">
+                                                        <input height="50" type="password" class="form-control" placeholder="Nueva Contraseña"
+                                                               id="pass_2" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
+                                                        <span id="S_2" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(2)"><img id="img_2" src="../IMG/v1.png" width="20" height="20"></span>
+                                                    </section>
+                                                    <i class="alerta" id="msj2"></i>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+
+                                    <section class="container">
+                                        <section class="row">
+                                            <section class="col-xs-12 col-md-4">
+                                                <section class="form-group">
+                                                    <label class="etiqueta" for="repitpass">Confirmar Contraseña</label>
+                                                    <section class="input-group">
+                                                        <input height="50" type="password" class="form-control" placeholder="Confirmar Contraseña"
+                                                               id="pass_3" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
+                                                        <span id="S_3" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(3)"><img id="img_3" src="../Imagenes/v1.png" width="20" height="20"></span>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+
+                                    <section class="container">
+                                        <section class="row">
+                                            <section class="col-xs-12 col-md-4">
+                                                <section class="form-group">
+                                                    <section align="right">
+                                                        <button data-tooggle="tooltip" data-placement="left" title="Actualizar" type="submit" class="btn btn-success btn-md btn-responsive"> <span class="fas fa-user-check"></span></button>
+                                                        <button data-tooggle="tooltip" data-placement="left" title="Cancelar" type="reset" class="btn btn-danger btn-md btn-responsive" data-dismiss="modal" onclick="defecto()"> <span class="fas fa-times-circle"></span></button>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+
+                                </section>
+                            </section>
+
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- Modal contraseña-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--AOS Libreria-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
