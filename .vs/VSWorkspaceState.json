@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\vendor",
-    "\\vendor\\bootstrap\\css"
+    ""
   ],
-  "SelectedNode": "\\css",
+  "SelectedNode": "\\vendor",
   "PreviewInSolutionExplorer": false
 }
