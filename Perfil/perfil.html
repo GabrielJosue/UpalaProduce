@@ -181,24 +181,23 @@
                         </p>
                     </article>
                 </section>
-            </section>
 
-            <!--Cuadro para cambiar imagen-->
-            <section class="row px-5 mx-5 mb-5">
-                <article class="col-sm-8 col-md-12">
-                    <button type="button" class="btn text-white bg-info col align-self-center">Cambiar &#128247</button>
-                    <script type="text/javascript">
-                        Dropzone.options.dropzone = {
-                            maxFilesize: 2,
-                            acceptedFiles: ".png, .jpg, .jpge",
-                        }
-                        var drop = new Dropzone("#ImagenPerfil", { url: 'Codigo.php' });
-                        $("[data-toggle='tooltip']").tooltip();
-                    </script>
-                </article>
+                <!--Cuadro para cambiar imagen-->
+                 <section class="row px-5 mx-5 mb-5">
+                    <article class="col-sm-8 col-lg-12">
+                        <button type="button" class="btn text-white bg-info col align-self-center">Cambiar &#128247</button>
+                        <script type="text/javascript">
+                            Dropzone.options.dropzone = {
+                                maxFilesize: 2,
+                                acceptedFiles: ".png, .jpg, .jpge",
+                            }
+                            var drop = new Dropzone("#ImagenPerfil", { url: 'Codigo.php' });
+                            $("[data-toggle='tooltip']").tooltip();
+                        </script>
+                    </article>
+                </section>
+                <!--Fin de Cuadro para cambiar imagen-->
             </section>
-            <!--Fin de Cuadro para cambiar imagen-->
-
         </div>
     </div>
     <!-- /.container -->
