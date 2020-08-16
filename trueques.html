@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Upala Produce</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+
+  <!--icono-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/trueques.css">
+  <!--<link rel="stylesheet" href="css/main.css"> -->
+  
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
+      <img src="IMG/Logo.png" alt="Upala Produce" style="width:150px;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <!--dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nosotros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Mision</a>
+              <a class="dropdown-item" href="#">Vision</a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trueques</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Publicidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactanos</a>
+          </li>
+          
+          <!---->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"href="#"><i class="fa fa-fw fa-user"></i> </a>
+            
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Perfil</a>
+              <a class="dropdown-item" href="#">Cuenta</a>
+              <a class="dropdown-item" href="#">Salir</a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <br>
+  <div id="myBtnContainer">
+    <button class="btns active" onclick="filterSelection('all')"> Mostrar Todo</button>
+    <button class="btns" onclick="filterSelection('nature')"> Verduras</button>
+    <button class="btns" onclick="filterSelection('frutas')"> Frutas</button>
+    <button class="btns" onclick="filterSelection('people')"> Tuberculos</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <section class="container">
+  <div class="row">
+    
+    <div class=" col-md-4 column nature">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="Mountains" style="width:50%">
+        <h4>Mountains</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class=" col-md-4 column nature">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="Lights" style="width:50%">
+        <h4>Lights</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="col-md-4 column nature">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="Nature" style="width:50%">
+        <h4>Forest</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  </div>
+  <article class="row">
+    <div class="col-md-4 ">
+      <div class="card column frutas" style="width: 18rem;">
+        <img src="IMG/papaya.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class=" card column frutas" style="width: 18rem;">
+        <img src="IMG/bananos.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class=" card column frutas" style="width: 18rem;">
+        <img src="IMG/fresas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    </article>
+    
+    <article class="row">
+    <div class="col-md-4 column frutas">
+      <div class="content">
+        <img src="IMG/manzagua.jpg" alt="Car"  class =" img-fluid " >
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="col-md-4 column frutas">
+      <div class="content">
+        <img src="IMG/manzagua.jpg" alt="Car"  class =" img-fluid ">
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="col-md-4 card column frutas" style="width: 18rem;">
+      <img src="IMG/manzagua.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </article>
+    <!--
+    <div class="column frutas">
+      <div class="content">
+        <img src="IMG/manzagua.jpg" alt="Car"  class =" img-fluid mx-auto d-block ">
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>-->
+  
+    <div class="column people">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="People" style="width:50%">
+        <h4>Girl</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="People" style="width:50%">
+        <h4>Man</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="IMG/Logo.png" alt="People" style="width:50%">
+        <h4>Woman</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  
+  </section>
+  <!-- Footer -->
+  <footer class=" navbar-dark bg-dark fixed-bottom">
+       <div class="container">
+      <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <script src="js/trueques.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!--AOS Libreria-->
+  
+</body>
+
+</html>
