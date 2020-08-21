@@ -20,8 +20,7 @@
   <!-- Aos-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/trueques.css">
-  <!--<link rel="stylesheet" href="css/main.css"> -->
-  
+  <link rel="stylesheet" href="css/main.css"> 
 </head>
 
 <body>
@@ -152,21 +151,23 @@
     </article>
     
     <article class="row">
-    <div class="col-md-4 column frutas">
-      <div class="content">
-        <img src="IMG/manzagua.jpg" alt="Car"  class =" img-fluid " >
-        <h4>Classic</h4>
-        <p>Lorem ipsum dolor..</p>
+      <div class="col-md-4 card column frutas" class="img-fluid" style="width: 18rem;">
+        <img src="IMG/manzagua.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <div class="col-md-4 card column frutas" class="img-fluid" style="width: 18rem;">
+      <img src="IMG/manzagua.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-    <div class="col-md-4 column frutas">
-      <div class="content">
-        <img src="IMG/manzagua.jpg" alt="Car"  class =" img-fluid ">
-        <h4>Classic</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-    </div>
-    <div class="col-md-4 card column frutas" style="width: 18rem;">
+    <div class="col-md-4 card column frutas" class="img-fluid" style="width: 18rem;">
       <img src="IMG/manzagua.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -209,7 +210,14 @@
   
   </section>
   <!-- Footer -->
-  <footer class=" navbar-dark bg-dark fixed-bottom">
+  <footer class=" navbar-light bg-light  ">
+    <nav class="navbar expand-lg">
+      <ul class="navbar-nav mr-auto flex-row">
+        <li class="nav-item"> <a href=""  class="nav-link" ><i class="fab fa-facebook" id="facebook"></i></a> </li>
+        <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-whatsapp" id="whatsapp"></i></a></li>
+        <li class="nav-item"><a href="" class="nav-link"> <i class=" fab fa-instagram" id="instagram"></i></a> </li>
+      </ul>
+    </nav>
        <div class="container">
       <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
     </div>
@@ -221,6 +229,9 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
   <!--AOS Libreria-->
+
+  <!-- fontawrsome-->
+  <script src="https://kit.fontawesome.com/68a231f8ce.js" crossorigin="anonymous"></script>
   
 </body>
 
