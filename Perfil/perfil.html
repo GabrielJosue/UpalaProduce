@@ -11,15 +11,11 @@
     <title>Upala Produce</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
     <!-- Custom styles for this template -->
     <!--icono-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Aos-->
+    <!-- Aos-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="css/main.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,37 +23,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="Js/dropzone.js" type="text/javascript"></script>
-    <script src="JS/contrasena.js" type="text/javascript"></script>
-
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <link href="CSS/dropzone.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container">
             <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
-            <img src="../IMG/Logo.png" alt="Trueques Upala" style="width:150px;">
+            <img src="IMG/Logo.png" alt="Upala Produce" style="width:150px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="/index.html">
                             Inicio
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trueques</a>
+                        <a class="nav-link" href="../trueques.html">Trueques</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="mensajeria.html">Mensajeria</a>
+                        <a class="nav-link" href="../mensajeria.html">Mensajeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contactanos</a>
@@ -65,10 +62,10 @@
 
                     <!---->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-fw fa-user"></i> </a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-fw fa-user"></i> </a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="perfil.html">Perfil</a>
                             <a class="dropdown-item" href="#">Cuenta</a>
                             <a class="dropdown-item" href="#">Salir</a>
                             <div class="dropdown-divider"></div>
@@ -81,7 +78,7 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container h-100" >
+    <div class="container h-100">
 
         <div class="row justify-content-center h-100">
 
@@ -158,57 +155,73 @@
                     </section>
                 </section>
                 <!-- Modal editar -->
-
-
-
+                <!--Seccion de foto de perfil-->
                 <section class="col-sm-6">
                     <article class="text-center p-5">
                         <small class="text-muted d-block m-2">Foto actual</small>
-                        <img width="240px" src="../Imagenes/Foto.png" class="img border border-info rounded-circle p-3 img-fluid" alt="Foto">
+                        <img style="height:440px" src="IMG/Andres.jpg" class="img border border-info rounded-circle p-3 img-fluid" alt="Foto">
                     </article>
+                    <!--Cuadro para cambiar imagen-->
+                    <article class="col-sm-8 col-lg-12">
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="input-file-now" class="file-upload" />
+                            <!--</div>-->
+                            <button type="button" class="btn text-white bg-info col align-self-center">Cambiar &#128247</button>
+                            <script type="text/javascript">
+                                Dropzone.options.dropzone = {
+                                    maxFilesize: 2,
+                                    acceptedFiles: ".png, .jpg, .jpge",
+                                }
+                                var drop = new Dropzone("#ImagenPerfil", { url: 'Codigo.php' });
+                                $("[data-toggle='tooltip']").tooltip();
+                            </script>
+                        </div>
+                    </article>
+                    <!--Fin de Cuadro para cambiar imagen-->
                 </section>
 
+                <!--Seccion de informacion de datos personales-->
                 <section class="col-sm-6 p-3">
                     <article>
                         <h2 class="text-center"> Información </h2>
                         <p>
                             • Nombre:         <b> Andres </b> <br />
-                            • Apellidos: <b> Alfaro Cortes </b> <br />
+                            • Apellidos:      <b> Alfaro Cortes </b> <br />
                             • Distrito:       <b> Upala </b> <br />
                             • Direccion:       <b> 100m al norte del Banco Nacional Upala </b> <br />
                             • E-mail:          <b>andresalfaro@gmail.com</b> <br />
                             • Telefono:        <b>87459621</b>    <br />
                         </p>
-                    </article>
-                </section>
 
-                <!--Cuadro para cambiar imagen-->
-                 <section class="row px-5 mx-5 mb-5">
-                    <article class="col-sm-8 col-lg-12">
-                        <button type="button" class="btn text-white bg-info col align-self-center">Cambiar &#128247</button>
-                        <script type="text/javascript">
-                            Dropzone.options.dropzone = {
-                                maxFilesize: 2,
-                                acceptedFiles: ".png, .jpg, .jpge",
-                            }
-                            var drop = new Dropzone("#ImagenPerfil", { url: 'Codigo.php' });
-                            $("[data-toggle='tooltip']").tooltip();
-                        </script>
+                        <!--Google map-->
+                        <div id="showMap" style="width: 450px; height: 350px;">
+
+                        </div>
+                        <!--Google Maps-->
                     </article>
                 </section>
-                <!--Fin de Cuadro para cambiar imagen-->
             </section>
         </div>
     </div>
     <!-- /.container -->
-
     <!-- Footer -->
     <footer class="py-5 navbar-light bg-light ">
-        <div class="container">
-            <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
-            <p class="m-0 text-center ">Desarrollado por A&G Informática</p>
-        </div>
-        <!-- /.container -->
+        <section class="container ">
+            <nav class="navbar expand-lg ">
+                <ul class="navbar-nav mr-auto flex-row mx-auto">
+                    <li class="nav-item"> <a href="" class=" nav-link"><i class="fab fa-facebook" id="facebook"></i></a> </li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-whatsapp" id="whatsapp"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"> <i class=" fab fa-instagram" id="instagram"></i></a> </li>
+                </ul>
+            </nav>
+            <div class="container">
+                <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
+                <p class="m-0 text-center ">Desarrollado por A&G Informática</p>
+            </div>
+            <!-- /.container -->
+
+        </section>
+
     </footer>
 
     <!--Modal para contrasena-->
@@ -237,7 +250,7 @@
                                                     <section class="input-group">
                                                         <input height="50" type="password" oninvalid="setCustimValidity('La contrseña es invalida')" class="form-control" placeholder="Contraseña Actual" id="pass_1"
                                                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
-                                                        <span id="S_1" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(1)"><img id="img_1" src="../Imagenes/v1.png" width="20" height="20"></span>
+                                                        <span id="S_1" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(1)"><img id="img_1" src="IMG/v1.png" width="20" height="20"></span>
                                                     </section>
                                                 </section>
                                             </section>
@@ -252,7 +265,7 @@
                                                     <section class="input-group">
                                                         <input height="50" type="password" class="form-control" placeholder="Nueva Contraseña"
                                                                id="pass_2" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
-                                                        <span id="S_2" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(2)"><img id="img_2" src="../IMG/v1.png" width="20" height="20"></span>
+                                                        <span id="S_2" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(2)"><img id="img_2" src="IMG/v1.png" width="20" height="20"></span>
                                                     </section>
                                                     <i class="alerta" id="msj2"></i>
                                                 </section>
@@ -268,7 +281,7 @@
                                                     <section class="input-group">
                                                         <input height="50" type="password" class="form-control" placeholder="Confirmar Contraseña"
                                                                id="pass_3" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
-                                                        <span id="S_3" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(3)"><img id="img_3" src="../Imagenes/v1.png" width="20" height="20"></span>
+                                                        <span id="S_3" data-tooggle="tooltip" data-placement="left" title="Mostrar Contraseña" class="input-group-addon" onclick="cambiar(3)"><img id="img_3" src="IMG/v1.png" width="20" height="20"></span>
                                                     </section>
                                                 </section>
                                             </section>
@@ -298,15 +311,40 @@
         </section>
     </section>
     <!-- Modal contraseña-->
-
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/contrasena.js" type="text/javascript"></script>
     <!--AOS Libreria-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!--Mapa de Google-->
+    <script type="text/javascript">
+        function showGoogleMaps() {
+            //Creamos el punto a partir de la latitud y longitud de una dirección:
+            var point = new google.maps.LatLng('10.840294', '-85.040692');
+
+            //Configuramos las opciones indicando zoom, punto y tipo de mapa
+            var myOptions = {
+                zoom: 15,
+                center: point,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            //Creamos el mapa y lo asociamos a nuestro contenedor
+            var map = new google.maps.Map(document.getElementById("showMap"), myOptions);
+
+            //Mostramos el marcador en el punto que hemos creado
+            var marker = new google.maps.Marker({
+                position: point,
+                map: map,
+            });
+        }
+        showGoogleMaps();
+    </script>
+    <!-- fontawrsome-->
+    <script src="https://kit.fontawesome.com/68a231f8ce.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

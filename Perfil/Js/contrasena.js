@@ -2,12 +2,12 @@ function cambiar(n){
 if(document.getElementById('pass_'+n).type=="password"){
 document.getElementById("pass_"+n).type="text";
 document.getElementById("S_"+n).title="Ocultar Contraseña";
-document.getElementById('img_'+n).src='../Imagenes/v2.png';
+document.getElementById('img_'+n).src='../IMG/v2.png';
 }else{
 	if (document.getElementById('pass_'+n).type=="text") {
 		document.getElementById("pass_"+n).type="password";
 		document.getElementById("S_"+n).title="Mostrar Contraseña";
-		document.getElementById('img_'+n).src='../Imagenes/v1.png';
+		document.getElementById('img_'+n).src='../IMG/v1.png';
 	}
 }	
 	}
@@ -59,9 +59,9 @@ function defecto(){
 	document.getElementById('pass_1').value="";
 	document.getElementById('pass_2').value="";
 	document.getElementById('pass_3').value="";
-	document.getElementById('img_1').src='../Imagenes/v1.png';
-	document.getElementById('img_2').src='../Imagenes/v1.png';
-	document.getElementById('img_3').src='../Imagenes/v1.png';
+	document.getElementById('img_1').src = '../IMG/v1.png';
+	document.getElementById('img_2').src = '../IMG/v1.png';
+	document.getElementById('img_3').src = '../IMG/v1.png';
 	document.getElementById("pass_1").type="password";
 	document.getElementById("pass_2").type="password";
 	document.getElementById("pass_3").type="password";
