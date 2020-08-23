@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container">
             <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
-            <img src="IMG/Logo.png" alt="Upala Produce" class="Logo">
+            <img src="IMG/Logo.png" alt="Upala Produce" style="width:150px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,12 +64,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contactanos</a>
                     </li>
-                    
 
-                    <li class="nav-item">
-                        <span> <a class="nav-link" href="login.html">Login <i class="fas fa-sign-in-alt"></i> </a> </span>
-                    </li>
                     <!---->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fa fa-fw fa-user"></i> </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Perfil/perfil.html">Perfil</a>
+                            <a class="dropdown-item" href="#">Cuenta</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                            <div class="dropdown-divider"></div>
+
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,38 +91,9 @@
             <div class="col-lg-8">
                 <hr>
 
-                <!-- carousel -->
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100 publi" src="IMG/publi1.jpeg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi2.jpeg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi3.jpeg" alt="Third slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi5.jpeg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi6.jpeg" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi7.jpeg" alt="Third slide">
-                      </div>
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
 
-                      <div class="carousel-item ">
-                        <img class="d-block w-100 publi" src="IMG/publi8.jpeg" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 publi" src="IMG/publi.jpeg" alt="Second slide">
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <!--fin carousel-->
                 <hr>
 
             </div>
@@ -210,8 +188,7 @@
         </article>
     </section>
     <!-- Footer -->
-     <!-- Footer -->
-     <footer class=" navbar-light bg-light">
+    <footer class="py-5 navbar-light bg-light ">
         <section class="container ">
             <nav class="navbar expand-lg ">
                 <ul class="navbar-nav mr-auto flex-row mx-auto">
