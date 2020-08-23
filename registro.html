@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  
+  <!-- Fin de link para Login -->
+  <title>Upala Produce</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky top">
+        <div class="container">
+            <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
+            <img src="IMG/Logo.png" alt="Upala Produce" style="width:150px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!--dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mision</a>
+                            <a class="dropdown-item" href="#">Vision</a>
+                            <div class="dropdown-divider"></div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trueques</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publicidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class="container h-100" style="margin-top: 50px; margin-bottom: 50px">
+            <h1 class="text-center" id="title">Login del Sitio</h1>
+            <hr>
+            <!--Seccion de Registrar-->
+            <div class="row">
+                <div class="col-md-5">
+                    <form role="form" method="post" action="register.php">
+                        <fieldset>
+                            <h3 class="text-uppercase pull-center"> REGISTRARSE.</h3>
+                            <hr />
+                            <div class="form-group">
+                                <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nombre de usuario">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Correo electrónico / e-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="telefono" name="telefono" id="telefono" class="form-control input-lg" placeholder="Teléfono / Celular">
+                            </div>
+                            <div class="form-group">
+                                <label for="Distrito" class="mt-3"> Distrito: </label>
+                                <select id="Distrito" class="form-control">
+                                    <option> Upala</option>
+                                    <option> Canalete </option>
+                                    <option> Yolillal </option>
+                                    <option> México de Upala </option>
+                                    <option> San José de Upala </option>
+                                    <option> Dos Ríos </option>
+                                    <option> Aguas Claras </option>
+                                    <option> Bijagua </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Describa la dirección de su domicilio">  </textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Confirmar contraseña">
+                            </div>
+                            <hr />
+                            <!--Tarjeta de credito-->
+                            <section class="credit-card-div">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="text-align-center">Costo de inscripción ₡ 3.000</h4>
+                                        <label class="mt-3 text-center"> Datos de la tarjeta: </label>
+                                        <div class="row ">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control" placeholder="Ingrese el número de tarjeta" />
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted "><small>Mes de Expiración</small></span>
+                                                <input type="text" class="form-control" placeholder="MM" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted"><small>  Año de Expiración</small></span>
+                                                <input type="text" class="form-control" placeholder="YY" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <br />
+                                                <span class="help-block text-muted small-font"> CCV</span>
+                                                <input type="text" class="form-control" placeholder="CCV" />
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                                <img src="IMG/tarjeta.jpg" class="img-rounded" style="width:120px"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br />
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Aceptar términos y condiciones
+                                </label>
+                            </div>
+                            <br />
+                            <div class="col-lg-5 mx-auto">
+                                <input type="submit" class="btn btn-lg btn-primary " value="Registrarse">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-md-2">
+                    <!-------null------>
+                </div>
+                <!--Seccion de Ingresar-->
+                <div class="col-md-5">
+                    <form role="form">
+                        <fieldset>
+                            <h3 class="text-uppercase"> Ingresar con su cuenta: </h3>
+                            <hr />
+                            <div class="form-group">
+                                <input type="email" name="username" id="username" class="form-control input-lg" placeholder="Nombre de usuario">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña">
+                            </div>
+                            <div class="col-lg-5 mx-auto">
+                                <input type="submit" class="btn btn-lg btn-primary" value="Ingresar">
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 navbar-light bg-light ">
+        <section class="container ">
+            <nav class="navbar expand-lg ">
+                <ul class="navbar-nav mr-auto flex-row mx-auto">
+                    <li class="nav-item"> <a href="" class=" nav-link"><i class="fab fa-facebook" id="facebook"></i></a> </li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-whatsapp" id="whatsapp"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"> <i class=" fab fa-instagram" id="instagram"></i></a> </li>
+                </ul>
+            </nav>
+            <div class="container">
+                <p class="m-0 text-center "> &copy; Trueques Upala  2020</p>
+                <p class="m-0 text-center ">Desarrollado por A&G Informática</p>
+            </div>
+            <!-- /.container -->
+
+        </section>
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+   
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/68a231f8ce.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
