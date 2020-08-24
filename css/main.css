@@ -450,9 +450,24 @@ ul > li{
 }
 
 .Logo{
-  width: 150px;
+height: 130px;
+width: 130px;
 }
 
 .publi{
   height: 300px;
+}
+
+.part1{
+  color:gray;
+  font-family: Rubik;
+}
+.part2{
+  color:blue;
+  font-family: Rubik;
+}
+
+.avatar{
+  width: 115px;
+  justify-content: center;
 }

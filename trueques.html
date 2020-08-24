@@ -30,7 +30,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light>
         <div class="container">
-            <!--<a class="navbar-brand" href="#">Start Bootstrap</a> -->
+               <!--
+                <span class=" part2">Trueques</span>
+                <span class=" part1">Upala</span>-->
             <img src="IMG/Logo.png" alt="Trueques Upala" class="Logo">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,9 +56,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="mensajeria.html">Mensajeria</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
-                    </li>
+                    
 
                     <!---->
                     <li class="nav-item dropdown">
@@ -79,10 +79,11 @@
     <br>
     <div id="myBtnContainer">
         <button class="btns active" onclick="filterSelection('all')"> Mostrar Todo</button>
-        <button class="btns" onclick="filterSelection('nature')"> Verduras</button>
+        <button class="btns" onclick="filterSelection('verduras')"> Verduras</button>
         <button class="btns" onclick="filterSelection('frutas')"> Frutas</button>
-        <button class="btns" onclick="filterSelection('people')"> Tuberculos</button>
         <button class="btns" onclick="filterSelection('electronicos')"> Electronicos</button>
+        <button class="btns" onclick="filterSelection('herra')"> Herramientas</button>
+        <button class="btns" onclick="filterSelection('otros')"> Otros</button>
     </div>
     <!--Modal para perfil-->
     <section id="Perfil" class="modal fade" data-backdrop="static" data-keboard="false" tabindex="-1" aria-hidden="true">
@@ -96,7 +97,7 @@
                     <h2 class="text-center"> Información </h2>
                     <hr />
                     <article class="text-center">
-                        <img style="height:200px" src="Perfil/IMG/Andres.jpg" class="img border border-info rounded-circle p-3 img-fluid" alt="Foto" float="left">
+                        <img style="height:200px" src="Perfil/IMG/Andres.jpg" class="img border border-info rounded-circle p-3 img-fluid" alt="Foto" style="border-radius: 50%;" float="left">
                         <p style="display:inline-block">
                             • Nombre:         <b> Andres Alfaro Cortés </b> <br />
                             • Distrito:       <b> Upala </b> <br />
@@ -110,7 +111,7 @@
 
                         </div>
                         <!--Google Maps-->
-                    </article>c
+                    </article>
                 </section>
             </article>
         </section>
@@ -121,20 +122,20 @@
         <article class="row">
             <div class="col-md-4 ">
                 <div class="card column frutas" style="width: 18rem;">
-                    <img src="IMG/papaya.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/bananos.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Bananos</h5>
+                        <p class="card-text">mano de bananos</p>
+                  <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card column frutas" style="width: 18rem;">
-                    <img src="IMG/bananos.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Manzanas de agua</h5>
+                        <p class="card-text">Ricas manzanas de agua ,recien cortadas</p>
                         <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
@@ -143,9 +144,9 @@
                 <div class=" card column frutas" style="width: 18rem;">
                     <img src="IMG/fresas.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Fresas</h5>
+                        <p class="card-text">calidad de fresas </p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -156,32 +157,32 @@
         <!---->
         <article class="row">
             <div class="col-md-4 ">
-                <div class="card column frutas" style="width: 18rem;">
-                    <img src="IMG/papaya.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card column verduras" style="width: 18rem;">
+                    <img src="IMG/platanos.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Platanos</h5>
+                        <p class="card-text">calidad de platanos , listos para una olla de carne</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card column frutas" style="width: 18rem;">
-                    <img src="IMG/bananos.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card column verduras" style="width: 18rem;">
+                    <img src="IMG/Tomate.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Tomates</h5>
+                        <p class="card-text">Tomates bien frescos</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card column frutas" style="width: 18rem;">
-                    <img src="IMG/fresas.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card column verduras" style="width: 18rem;">
+                    <img src="IMG/yuca.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Yuca</h5>
+                        <p class="card-text">Yuca de buena calidad</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -195,30 +196,30 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class=" card column frutas" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/Piña.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Piña</h5>
+                        <p class="card-text">Piña de calidad , pura miel</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class=" card column frutas" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/naranjas.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Naranjas</h5>
+                        <p class="card-text">Naranjas con bastante jugo , además que son puro dulce</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -232,70 +233,31 @@
         <article class="row">
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/refri.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Refrigeradora usada</h5>
+                        <p class="card-text">Refrigeradora usada , pero sirve como nueva</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/tablet.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Tablet Usada</h5>
+                        <p class="card-text">Tablet con 1 año de uso , marca Samsung</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/tv.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Smart Tv</h5>
+                        <p class="card-text">Smart Tv de 32 pulgadadas con 6 meses de uso</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -309,32 +271,32 @@
         <!---->
         <article class="row">
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/taladro.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Taladro</h5>
+                        <p class="card-text">Taladro usado </p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/Guadaña.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Guadaña</h5>
+                        <p class="card-text">Guadaña con poco uso</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/pala.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Pala</h5>
+                        <p class="card-text">Ofresco Pala para las labores en el campo</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -349,31 +311,66 @@
         <article class="row">
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/licuadora.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Liquadora</h5>
+                        <p class="card-text">Liquadora usada marca Oster</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/refri.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/laptop.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">Laptop con 2 años de uso perfecto estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <!---->
+        <article class="row">
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/camote.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camote</h5>
+                        <p class="card-text">Camote de calidad</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/vainicas.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vainicas</h5>
+                        <p class="card-text">Vainicas frescas</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/zanahorias.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Zanahorias</h5>
+                        <p class="card-text">Bien frescas , pura calidad</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -388,70 +385,31 @@
         <article class="row">
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/cocina.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Cocina</h5>
+                        <p class="card-text">Cocina Electrica usada en buen estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/tablet.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/desktop.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Desktop</h5>
+                        <p class="card-text">Computadora de escrito en buen estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -465,32 +423,67 @@
         <!---->
         <article class="row">
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/soldadora.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Soldadora</h5>
+                        <p class="card-text">Soldadora en Buen estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card column herra" style="width: 18rem;">
+                    <img src="IMG/sierra.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Sierra de mesa</h5>
+                        <p class="card-text">Usada en buen estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/herra.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kit de Herramientas</h5>
+                        <p class="card-text">Herramientas varias para diferentes usos</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <!---->
+        <article class="row">
+            <div class="col-md-4">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/taladro.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/metabo.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Metado</h5>
+                        <p class="card-text">Metabo con 2 años de uso , perfecto estado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column herra" style="width: 18rem;">
+                    <img src="IMG/hacha.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -504,32 +497,32 @@
         <!---->
         <article class="row">
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/tenis.png" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column  otros" style="width: 18rem;">
+                    <img src="IMG/camisas.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/vasos.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -542,71 +535,32 @@
         <!---->
         <article class="row">
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/vainicas.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/zanahorias.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                    <img src="IMG/taladro.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -620,32 +574,71 @@
         <!---->
         <article class="row">
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column frutas" style="width: 18rem;">
+                    <img src="IMG/mangos.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column frutas" style="width: 18rem;">
+                    <img src="IMG/sandias.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
+                <div class=" card  column frutas" style="width: 18rem;">
+                    <img src="IMG/durazno.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </article>
+
+        <!---->
+        <article class="row">
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/culantro.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Culantro</h5>
+                        <p class="card-text">Culantro coyote de calidad </p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/lechuga.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lechuga</h5>
+                        <p class="card-text">Lechuga hidroponica de calidad</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column verduras" style="width: 18rem;">
+                    <img src="IMG/ayote.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayote</h5>
+                        <p class="card-text">Ayote de calidad</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -663,8 +656,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -673,8 +666,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -683,8 +676,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -702,8 +695,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -712,8 +705,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -722,8 +715,86 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </article>
+
+        <!---->
+        <article class="row">
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/tonka.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camion Tonka</h5>
+                        <p class="card-text">carro de metal Tonka usado</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/setma.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de maqullaje</h5>
+                        <p class="card-text">Set de maquillaje accesorios varios</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/vajillas.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de vajillas</h5>
+                        <p class="card-text">poco uso</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </article>
+
+        <!---->
+        <article class="row">
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/gafas.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gafas</h5>
+                        <p class="card-text">Gafas de sol usadas</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/cerdo.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerdo</h5>
+                        <p class="card-text">Cerdo pequeño para engorde</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" card  column otros" style="width: 18rem;">
+                    <img src="IMG/gallinas.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gallinas</h5>
+                        <p class="card-text">Gallinas ponedoras</p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -741,8 +812,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -751,8 +822,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -761,8 +832,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -780,8 +851,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -790,8 +861,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -800,8 +871,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -819,8 +890,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -829,8 +900,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -839,8 +910,8 @@
                     <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text"></p>
+                        <a data-target="#Perfil" class="btn btn-primary" data-toggle='modal' style="color:white"> Ver Publicante</a>
                     </div>
                 </div>
             </div>
@@ -852,273 +923,11 @@
         </article>
 
         <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+       
 
+       
 
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </article>
-
-        <!---->
-        <article class="row">
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class=" card  column electronicos" style="width: 18rem;">
-                    <img src="IMG/manzagua.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-        </article>
+        
         <!-- END GRID -->
 
     </section>
