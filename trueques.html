@@ -84,7 +84,52 @@
         <button class="btns" onclick="filterSelection('electronicos')"> Electronicos</button>
         <button class="btns" onclick="filterSelection('herra')"> Herramientas</button>
         <button class="btns" onclick="filterSelection('otros')"> Otros</button>
+
+        <button  type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="float:right">Publicar</button>
+
+        <!-- modal publicaciones-->
+       
     </div>
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center">Publica tu trueque aqui</h1>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group col-md-8">
+                            <label class="control-label">Nombre</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="nombre" value="">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label class="control-label">dirección</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="dirección value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-8">
+                            <label class="control-label">Telefono</label>
+                            <div>
+                                <input type="tel" class="form-control input-lg" name="dirección value="">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!--Modal para perfil-->
     <section id="Perfil" class="modal fade" data-backdrop="static" data-keboard="false" tabindex="-1" aria-hidden="true">
         <section class="modal-dialog modal-lg">
